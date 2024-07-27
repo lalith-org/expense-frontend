@@ -1,0 +1,9 @@
+name: Continuous Integration
+on: [push]
+jobs:
+  call-continuous-integration-reusable:
+    uses: lalith-org/github-reusable-workflows/.github/workflows/ci.yml@main
+    with:
+      project_name: frontend-expense
+      npm_install: false
+    secrets: inherit
