@@ -7,3 +7,4 @@ jobs:
       project_name: frontend-expense
       npm_install: false
     secrets: inherit
+
