@@ -1,0 +1,12 @@
+name: Continuous Integration
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  call-release-reusable:
+    uses: lalith-org/github-reusable-workflows/.github/workflows/release.yml@main
+    with:
+      project_name: frontend-expense
+      npm_install: false
+    secrets: inherit
