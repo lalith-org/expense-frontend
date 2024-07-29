@@ -9,4 +9,5 @@ jobs:
     with:
       project_name: frontend-expense
       npm_install: false
+      release_archive_file: "public src VERSION"
     secrets: inherit
