@@ -9,5 +9,5 @@ jobs:
     with:
       project_name: expense-frontend
       npm_install: false
-      release_archive_file: "*.js package.json schema VERSION node_modules"
+      release_archive_file: "*"
     secrets: inherit
